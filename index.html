@@ -321,13 +321,46 @@
   @media(max-width:760px){
     .nav-wrap{flex-direction:column;gap:14px;}
     .links{flex-wrap:wrap;justify-content:center;gap:18px;}
-    .grid-3,.founders,.contact-grid,.testimonials,.diff-grid{grid-template-columns:1fr;}
+
+    /* Kart grupları telefonda tek sütun yerine 2 sütun, küçültülmüş boyutlarla */
+    .grid-3,.founders,.testimonials,.diff-grid{grid-template-columns:repeat(2,1fr);}
+    .contact-grid{grid-template-columns:1fr;}
+
+    .cell{padding:22px 16px;}
+    .cell .idx{font-size:11px;margin-bottom:10px;}
+    .cell h3{font-size:15.5px;margin:0 0 8px;}
+    .cell p{font-size:12.5px;}
+    .cell .icon{width:24px;height:24px;}
+
+    .founder-card{padding:20px 16px;}
+    .founder-initial{width:38px;height:38px;font-size:15px;margin-bottom:12px;}
+    .founder-card h3{font-size:15.5px;}
+    .founder-role{font-size:11px;margin:0 0 10px;}
+    .founder-card p{font-size:12.5px;margin:0 0 12px;}
+    .tag{font-size:10px;padding:4px 9px;}
+
+    .testimonial{padding:18px 14px;}
+    .testimonial p.quote{font-size:12.5px;margin:0 0 14px;}
+    .testimonial .who{font-size:10.5px;padding-top:10px;}
+    .testimonial .who strong{font-size:12px;}
+
+    .diff-cell{padding:20px 16px;}
+    .diff-cell h3{font-size:15px;margin:0 0 6px;}
+    .diff-cell p{font-size:12.5px;margin:0;}
+
     .process{grid-template-columns:repeat(2,1fr);}
     .stats{grid-template-columns:repeat(2,1fr);}
     .stat{border-bottom:1px solid var(--line);}
     .ruler{display:none;}
     .wave-divider svg{height:34px;}
     section{padding:60px 0;}
+  }
+  @media(max-width:420px){
+    .cell{padding:18px 13px;}
+    .cell h3{font-size:14.5px;}
+    .cell p{font-size:12px;}
+    .founder-card{padding:16px 13px;}
+    .testimonial{padding:15px 12px;}
   }
 </style>
 </head>
